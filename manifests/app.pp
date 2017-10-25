@@ -1,4 +1,4 @@
-node 'node1', 'node2'  {
+node 'node3'  {
 
     $url_v3 = 'https://3-107874296-gh.circle-artifacts.com/0/tmp/circle-artifacts.wooda1V/sysfoo.war'
     $url_v3_checksum = '5aa79b9893ffba6a4eb376d2839005a9'
@@ -18,18 +18,7 @@ node 'node1', 'node2'  {
     }
     
     tomcat::deploy { "sysfoo":
-        deploy_url    => $url_v2,
-        md5_checksum  => $url_v2_checksum,
-    }
-}
-
-node default {
-
-    notify { 'message':
-        message => "
-        
-              **** EXECUTING DEFAULT BLOCK *****
-              
-        ",
+        deploy_url    => $url_v3,
+        md5_checksum  => $url_v3_checksum,
     }
 }
