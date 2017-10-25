@@ -15,5 +15,5 @@ mod 'java',
    :git    => 'https://github.com/mschmeitz/puppet-module-java'
 
 mod 'base',
-   :git    => 'https://github.com/puppetlabs/puppet-module-base',
+   :git    => 'https://github.com/mschmeitz/puppet-module-base',
 #  :branch => 'docs_experiment'
